@@ -1,0 +1,42 @@
+// square article scss
+
+.half-box-article {
+    height: 450px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 0 10px 10px 0;
+    border-right: 1px solid rgba(47, 79, 79, 0.2);
+    border-bottom: 1px solid rgba(47, 79, 79, 0.2);
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+    h3, p {
+        // text-overflow: ellipsis;
+        margin: 10px 0 0;
+        color: darkslategray;
+    }
+
+    h3 {
+        height: 15%;
+    } 
+
+    p {
+        height: 25%;
+    }
+}
+
+@media all and (max-width: 768px ) {
+    .half-box-article {
+        width: calc(100% - 20px);
+    }
+}

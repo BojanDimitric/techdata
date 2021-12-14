@@ -1,0 +1,36 @@
+// tech data home page scss
+
+.tech-data {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+
+    h2 {
+        align-self: flex-start;
+        margin: 15px 10px 0;
+        color: darkslategray
+    }
+
+    .divider {
+        height: 0;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        border-bottom: 2px solid rgba(47, 79, 79, 0.2);
+        margin: 10px 0 30px;
+    }
+    
+    .quarter-box-article-container,
+    .half-box-article-container,
+    .half-square-article-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+}
